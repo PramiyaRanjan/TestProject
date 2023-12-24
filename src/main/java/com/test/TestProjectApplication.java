@@ -7,7 +7,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class TestProjectApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(TestProjectApplication.class, args);
+		CongigurebleApplicationContext run = SpringApplication.run(TestProjectApplication.class, args);
+
+                run.close();
 	}
 
 }
